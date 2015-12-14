@@ -1,0 +1,275 @@
+/***********************************************************************
+  jQuery Coda-Slider v3.0 - kevinbatdorf.github.com/codaslider
+  Copyright (c) 2012 Kevin Batdorf
+  This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
+************************************************************************/
+.codebgr1 { background:#ffffff  ;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: cover;}
+.codebgr2 { background:  #ffffff  url('../img/homebanner/pipeline-mobile/Mobile-Banner-2-bgr.jpg') no-repeat top center ;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;}
+.codebgr3 { background:  #ffffff  url('../img/homebanner/pipeline-mobile/Mobile-Banner-3-bgr.jpg') no-repeat top center ;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;}
+.codebgr4 { background:  #ffffff  url('../img/homebanner/pipeline-mobile/Mobile-Banner-4-bgr.jpg') no-repeat top center ;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;}
+.codebgr5 { background:  #ffffff  url('../img/homebanner/pipeline-mobile/Mobile-Banner-5-bgr.jpg') no-repeat top center ;
+	-webkit-background-size: cover;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;}
+	.codebgr6 { background: #ffffff  url('../img/homebanner/pipeline-mobile/Mobile-Banner-6-bgr.jpg') no-repeat top center ;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;}
+.coda-slider-wrapper {
+  padding: 0px 0; 
+}
+  .coda-slider-wrapper .coda-slider {
+    background: #f2f2f2;
+    width: 1200px; 
+  }
+ #homebannercontent .coda-slider-wrapper .coda-slider {
+    background: #f2f2f2;
+   clear:both
+   ;width:263px; 
+  
+  }
+    .coda-slider-wrapper .coda-slider .panel {
+      width: 1200px; 
+    }
+	#homebannercontent	.coda-slider-wrapper .coda-slider .panel {
+      width: 263px; 
+	  magin:0 auto;
+    }
+      .coda-slider-wrapper .coda-slider .panel .panel-wrapper {
+        padding: 0px; 
+      }
+	  .coda-slider-wrapper .coda-slider .panel .panel-wrapper img {
+        width: 100%;  
+      }
+	 #homebannercontent .coda-slider-wrapper .coda-slider .panel .panel-wrapper img {
+       
+      }
+	  .coda-slider-t-c {
+		   background: transparent url(../img/homebanner/pipeline-mobile/mobilebgr.png) no-repeat top left;
+width:300px; margin:0 auto;background-size: cover;	 
+position:relative;
+	  }
+  
+  .coda-slider-wrapper .coda-nav {
+  }
+    
+    .coda-slider-wrapper .coda-nav .current {
+      background: #0090FF; 
+    }
+    
+    .coda-slider-wrapper .coda-nav a {
+      background: #000;
+      color: #fff;
+      margin-right: 1px;
+      padding: 3px 6px; 
+    }
+    
+    .coda-slider-wrapper .coda-nav a:hover {
+      background: #000;
+      color: #fff;
+      text-shadow: none; 
+    }
+  
+  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-right {
+  }
+    
+    .coda-slider-wrapper .coda-nav-left a, .coda-slider-wrapper .coda-nav-right a {
+      background: #000;
+      color: #fff;
+      padding: 5px;
+      width: 100px; 
+    }
+  
+  .coda-slider-wrapper .coda-nav-left-arrow {
+    width: 25px;
+    height: 25px;
+    background: url(../img/arrow.png) no-repeat top left; 
+    margin-top:50px;
+  }
+
+.coda-slider-wrapper .coda-nav-left-arrow a {
+    width: 0;
+    height: 0;
+    border:none;
+  }
+
+  .coda-slider-wrapper .coda-nav-left-arrow:hover {
+    background: url(../img/arrow.png) no-repeat bottom left; 
+  }
+  
+  .coda-slider-wrapper .coda-nav-right-arrow {
+    width: 25px;
+    height: 25px;
+    background: url(../img/arrow.png) no-repeat top right; 
+    margin-top:50px;
+  }
+.coda-slider-wrapper .coda-nav-right-arrow a {
+    width: 0;
+    height: 0;
+    background: none; 
+    margin-top:0;
+    border:none;
+  }
+
+  .coda-slider-wrapper .coda-nav-right-arrow:hover {
+    background: url(../img/arrow.png) no-repeat bottom right; 
+  }
+
+  .coda-slider-wrapper .coda-nav-left-arrow:active, .coda-slider-wrapper .coda-nav-right-arrow:active {
+    margin-top: 55px; 
+  }
+  
+  .coda-slider-wrapper .loading {
+    height: 100%;
+    padding: 20px;
+    text-align: center; 
+  }
+
+  
+
+
+.arrows .coda-slider {
+  margin: 0 0px; 
+}
+
+.coda-slider-wrapper {
+  clear: both;
+  overflow: auto; 
+}
+  
+  .coda-slider-wrapper .coda-slider {
+    float: left;
+    overflow: hidden;
+    position: relative; 
+  }
+    
+    .coda-slider-wrapper .coda-slider .panel-container {
+      position: relative; 
+    }
+      
+      .coda-slider-wrapper .coda-slider .panel-container .panel {
+        display: block;
+        float: left; 
+		border:none !important;
+      }
+  
+  .coda-slider-wrapper .coda-nav {
+  }
+    
+    .coda-slider-wrapper .coda-nav ul {
+      padding:0;
+      clear: both;
+      display: block;
+      margin: auto;
+      overflow: hidden; 
+    }
+      
+      .coda-slider-wrapper .coda-nav ul li {
+        display: inline; 
+      }
+        
+        .coda-slider-wrapper .coda-nav ul li a {
+          display: block;
+          float: left;
+          text-decoration: none; 
+        }
+  
+  .coda-slider-wrapper .coda-nav-left-arrow, .coda-slider-wrapper .coda-nav-right-arrow {
+    cursor: pointer;
+    float: left;
+  }
+    
+    .coda-slider-wrapper .coda-nav-left-arrow a, .coda-slider-wrapper .coda-nav-right-arrow a {
+      display: block; 
+    }
+  
+  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-right {
+    float: left; 
+  }
+    
+    .coda-slider-wrapper .coda-nav-left a, .coda-slider-wrapper .coda-nav-right a {
+      display: block;
+      text-align: center;
+      text-decoration: none; 
+    }
+  
+  .coda-slider-wrapper .coda-nav-left, .coda-slider-wrapper .coda-nav-left-arrow {
+    clear: both; 
+  }
+  .coda-slider-t-c {
+    width: 318px;
+    margin: 0 auto;
+    background-size: 100% 106%;
+    position: relative;
+}
+#homebannercontent { top:0;}
+@media all and (min-width: 400px) {
+.homebannercontent,	#homebannercontent {}
+.coda-slider-t-c {  width: 160px; height:247px;padding: 39px 0 66px 18px; background-size: 100% 106%;  }
+.coda-slider-t-cg {  width: 160px;height:247px;}
+#homebannercontent .coda-slider-wrapper .coda-slider {width: 117px;}
+#homebannercontent	.coda-slider-wrapper .coda-slider .panel {     width: 117px;}
+#homebannercontent .panel-container img { width: 117px;height: 177px;     }
+.hero .texture-overlay {    min-height: 133px;margin-top: -196px;}
+}
+@media all and (min-width: 992px) {
+.homebannercontent, #homebannercontent {}
+.coda-slider-t-c {  width: 240px; height:400px;padding: 63px 0 66px 29px; background-size: 100% 106%;  }
+.coda-slider-t-cg {  width: 240px;height:400px;}
+#homebannercontent .coda-slider-wrapper .coda-slider {width: 175px;}
+#homebannercontent	.coda-slider-wrapper .coda-slider .panel {     width: 175px;}
+#homebannercontent .panel-container img { width: 175px;height: 286px;     }
+.hero .texture-overlay {    min-height: 133px;margin-top: -137px;}
+}
+@media all and (min-width: 1200px) {
+.homebannercontent, #homebannercontent {}
+.coda-slider-t-c {  width: 318px;    height: 535px;padding: 85px 0 66px 36px; background-size: 100% 106%;  }
+.coda-slider-t-cg { width: 318px; height:535px;}
+#homebannercontent .coda-slider-wrapper .coda-slider {width: 236px;}
+#homebannercontent	.coda-slider-wrapper .coda-slider .panel {     width: 236px;}
+#homebannercontent .panel-container img { width: 236px; height: 384px;    }
+.hero .texture-overlay {    min-height: 169px;
+    margin-top: -40px;}
+}
+@media all and (min-width: 1400px) {
+.homebannercontent, #homebannercontent {}
+.coda-slider-t-c {  width: 355px;  height: 608px;padding: 96px 0 0px 40px; background-size: 100% 106%;  }
+.coda-slider-t-cg {   width: 370px;height:608px;}
+#homebannercontent .coda-slider-wrapper .coda-slider {width: 263px;}
+#homebannercontent	.coda-slider-wrapper .coda-slider .panel {     width: 263px;}
+#homebannercontent .panel-container img { width: 263px;      height: 437px;   }
+.hero .texture-overlay {    min-height: 169px;
+    margin-top: -40px;}
+}
+
+@media all and (min-width: 1600px) {
+.homebannercontent, #homebannercontent {}
+.coda-slider-t-c {  width: 430px;  height: 720px;padding: 113px 0 0px 50px; background-size: 100% 106%;  }
+.coda-slider-t-cg {  width: 450px; height:720px;}
+#homebannercontent .coda-slider-wrapper .coda-slider {width: 317px;}
+#homebannercontent	.coda-slider-wrapper .coda-slider .panel {     width: 317px;}
+#homebannercontent .panel-container img { width: 317px;      height: 516px;   }
+.hero .texture-overlay {margin-top: -198px;}
+}
+@media all and (min-width: 1800px) {
+.homebannercontent, #homebannercontent {}
+.hero .texture-overlay {margin-top: -5px;}
+}

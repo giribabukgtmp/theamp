@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/amp-fevicon.ico" />	
+
+<title>AMP Technologies Demo about you</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="Amp Technologies" />
+<!-- Bootstrap -->
+<script src="js/modernizr.custom.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/flickity.css" rel="stylesheet" >
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/flexslider.css" rel="stylesheet">
+<link href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content=""/>
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body class="request-demo-service">
+<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]--> 
+<!-- open/close -->
+<div >
+  <header>
+    <section class="container-fluid" id="request-demo">
+      <div class="row nav-wrapper">
+        <div class="col-md-6 col-sm-6 col-xs-6 text-left"> <a href="index.html" class="amp-logo"><img src="img/logo.png" alt="AMP Logo"></a> </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 text-right"> </div>
+      </div>
+    </section>
+  </header>
+  <section class="demo-request">
+   <form class="request-form-signin request-form" data-toggle="validator" id="requestSubmit" action="javascript:void(0);"  onSubmit="SubmitDemoReq()">
+    <div class="container-fluid">
+    <div class="clearfix"></div>
+                        <div class="request-demo-skip-page dnone" id="reqDemoArrLeft"> <a href="#" class="request-demo-slider-arrow pull-left request-slider-previous"  style="display: inline;" id="reqDemoArrLeftBtn"><i class="fa  fa-angle-double-left"></i> </a></div>  <div class="request-demo-skip-page right dnone" id="reqDemoArrRight"> <a href="#" class="request-demo-slider-arrow pull-right request-slider-next right"style="display: inline;" id="reqDemoArrRightBtn"><i class="fa fa-angle-double-right"></i> </a> </div>
+                        <div class="clearfix"></div>
+      <div class="row">
+        <div class="col-md-12 nopadding">
+          <div class="request-demo-slider">
+            <ul class="slides" id="demoRequestSlider">
+              <li>
+                <div class="container-fluid" style="width:100%">
+                 <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-8 col-md-offset-2">
+                 
+                    <h2 class="form-signin-heading">Request a demo</h2>
+                    <div id="contact_results"></div>
+                    <div class="row">
+                    	<div class="col-sm-6 form-group">
+                     		<input type="text" id="inputName" name="inputName" class="form-control grey req" placeholder="FULL NAME" required autofocus>
+                         </div>
+                         <div class="col-sm-6 form-group">
+                    <input type="email" id="inputEmail" name="inputEmail" class="form-control grey req" placeholder="EMAIL" required autofocus>
+                     </div>
+                     </div>
+                     <div class="row">
+                     <div class="col-sm-6 form-group">
+                     		<input type="text" id="inputphone" name="inputphone" class="form-control grey" placeholder="PHONE NUMBER"  autofocus="">
+                         </div>
+                         <div class="col-sm-6 form-group">
+                    <input type="text" id="inputcomp" name="inputcomp" class="form-control grey" placeholder="COMPANY NAME"  autofocus="">
+                     </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-sm-6 col-sm-offset-3">
+                    <button class="btn  btn-primary  btn-block btn-blue1" type="submit" id="submit_simple_btn">Submit</button>
+                    <br>
+                         <button class="btn  btn-primary  btn-block btn-blue1"  type="submit" id="requestCustomDemoBtn" >Request a Custom Demo</button>
+                    
+                     </div>   </div> 
+                  
+                </div> </div> </div> </div>
+              </li>
+              <li>
+                <div class="container-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-8 col-md-offset-2">
+                       
+                          <h2 class="form-heading">Tell us about you</h2>
+                          <p class="text-center">Let us design a tailor-made demo experience just for you that fits your needs.</p> <br>
+                          <div class="row">
+                         
+                            <label for="ExecutiveLeadership" class="col-sm-6">
+                              <input type="radio"  value="" name="demoAbout" id="ExecutiveLeadership">
+                              <span>Executive Leadership</span> </label>
+                            <label for="AssetManager" class="col-sm-6">
+                              <input type="radio"  value=""  name="demoAbout" id="AssetManager" >
+                              <span>Asset Manager</span> </label>
+                            <label for="PropertyOwner" class="col-sm-6">
+                              <input type="radio"  value="" name="demoAbout" id="PropertyOwner">
+                              <span>Property Owner</span> </label>
+                            <label for="Broker" class="col-sm-6">
+                              <input type="radio"  value=""  name="demoAbout" id="Broker" >
+                              <span>Broker</span> </label>
+                            <label for="Property" class="col-sm-6">
+                              <input type="radio"  value="" name="demoAbout" id="PropertyInvestor">
+                              <span>Property Investor</span> </label>
+                            <label for="Operations" class="col-sm-6">
+                              <input type="radio"  value=""  name="demoAbout" id="OperationsManager" >
+                              <span>Operations Manager</span> </label>
+                            <label for="Portfolio" class="col-sm-6">
+                              <input type="radio"  value="" name="demoAbout" id="PortfolioManager">
+                              <span>Portfolio Manager</span> </label>
+                            <label for="aboutOther" class="col-sm-6">
+                              <input type="radio"  value="" name="demoAbout"  id="aboutOther">
+                              <span>OTHER <br><input type="text" id="input-about-other" class="form-control grey grey-inline "   placeholder="Your Company"   ></span> </label> 
+                          </div>
+                        
+                       
+                        
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </li>
+              <li>
+                <div class="container-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-8 col-md-offset-2">
+                       
+                          <h2 class="form-heading">Tell us your Industry?</h2>
+                          <div class="row">
+                            <label for="Technology" class="col-sm-6">
+                              <input type="checkbox"    name="Technology" id="Technology" class="indusCheck">
+                              <span>Technology</span> </label>
+                            <label for="REIT" class="col-sm-6">
+                              <input type="checkbox"    name="REIT" id="REIT">
+                              <span>REIT</span> </label>
+                            <label for="BankingInvesting" class="col-sm-6">
+                              <input type="checkbox"     name="BankingInvesting" id="BankingInvesting" class="indusCheck">
+                              <span>Banking/ Investing</span> </label>
+                            <label for="PropertyManagment" class="col-sm-6">
+                              <input type="checkbox"    name="PropertyManagment" id="PropertyManagment" class="indusCheck">
+                              <span>Property Managment</span> </label>
+                            <label for="CommercialRealEstate" class="col-sm-6">
+                              <input type="checkbox"     name="CommercialRealEstate" id="CommercialRealEstate" class="indusCheck" >
+                              <span>Commercial Real Estate</span> </label>
+                            <label for="RealEstateBrokerage" class="col-sm-6">
+                              <input type="checkbox"    name="RealEstateBrokerage" id="RealEstateBrokerage" class="indusCheck">
+                              <span>Real Estate Brokerage</span> </label>
+                            <label for="Education" class="col-sm-6">
+                              <input type="checkbox"     name="Education" id="Education" class="indusCheck">
+                              <span>Education</span> </label>
+                            <label for="techOthers" class="col-sm-6">
+                              <input type="checkbox"   name="techOthers" id="techOthers" class="indusCheck">
+                              <span>Others<br> <input type="text" id="input-indus-other" class="form-control grey grey-inline "   placeholder="Your Company"   ></span> </label>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="container-fluid products">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-8 col-xs-offset-2">
+                       
+                          <h2 class="form-heading">What products intrigue you?</h2>
+                          <p class="text-center">Select the products you find most useful for your company.</p> <br>
+                          <div class="row">
+                            <label for="AMPIntelligence" class="col-sm-6">
+                              <input type="checkbox"   value="accessible" name="quality" id="AMPIntelligence" class="prodCheck"> 
+                              <span>AMPIntelligence</span> </label>
+                            <label for="AMPPipleline-Mobile-App" class="col-sm-6">
+                              <input type="checkbox"   value="pretty" name="quality" id="AMPPipleline-Mobile-App" class="prodCheck">
+                              <span>AMPPipleline Mobile App</span> </label>
+                            <label for="Uber-Manager" class="col-sm-6">
+                              <input type="checkbox"   value="pretty"  name="Uber-Manager" id="Uber-Manager" class="prodCheck">
+                              <span>Uber Manager</span> </label>
+                            <label for="AMPStack" class="col-sm-6">
+                              <input type="checkbox"   value="accessible" name="AMPStack" id="AMPStack" class="prodCheck">
+                              <span>AMPStack</span> </label>
+                            <label for="AMPLease" class="col-sm-6">
+                              <input type="checkbox"   value="pretty" name="AMPLease" id="AMPLease" class="prodCheck">
+                              <span>AMPLease</span> </label>
+                            <label for="AMPFiles" class="col-sm-6">
+                              <input type="checkbox"   value="pretty"  name="AMPFiles" id="AMPFiles" class="prodCheck">
+                              <span>AMPFiles</span> </label>
+                            <label for="AMPPipeline" class="col-sm-6">
+                              <input type="checkbox"   value="pretty" name="AMPPipeline" id="AMPPipeline" class="prodCheck">
+                              <span>AMPPipeline</span> </label>
+                            <label for="AMPServices" class="col-sm-6">
+                              <input type="radio"   value="pretty"  name="AMPServices" id="AMPServices" class="prodCheck">
+                              <span>AMPServices</span> </label>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>
+                <div class="container-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-8 col-md-offset-2">
+                        
+                          <h2 class="form-heading">How can we serve you? </h2>
+                          <p class="text-center">Select the services you are interested in.</p> <br>
+                          <div class="row">
+                            <label for="FinanceAccounting" class="col-sm-6">
+                              <input type="radio" value="FinanceAccounting" name="FinanceAccounting" id="FinanceAccounting" class="servCheck">
+                              <span>Finance & Accounting</span> </label>
+                            <label for="LeaseAdministration" class="col-sm-6">
+                              <input type="radio" value="LeaseAdministration" name="LeaseAdministration" id="LeaseAdministration" class="servCheck">
+                              <span>Lease Administration</span> </label>
+                            <label for="DueDiligence" class="col-sm-6">
+                              <input type="radio" value="DueDiligence"  name="DueDiligence" id="DueDiligence" class="servCheck">
+                              <span>Due Diligence</span> </label>
+                            <label for="ServicesDashboard" class="col-sm-6">
+                              <input type="radio" value="ServicesDashboard" name="ServicesDashboard" id="ServicesDashboard" class="servCheck">
+                              <span>Service Dashboard</span> </label>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </li>
+              <li>
+                <div class="container-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-8 col-md-offset-2">
+                       
+                          <h2 class="form-heading">Get AMP'ed</h2>
+                          <br>
+                          <p class="text-center"> Prepare to see Commercial Real Estate as you've never seen it before.
+                            An AMP chAMPion will contact you within 24 hours to schedule your
+                            FREE demo. We guarantee you won't be disappointed! </p>
+                          <br>
+                          <div class="row">
+                            <div class="col-xs-12 col-md-4 col-md-offset-4">
+                              <button  class="btn  btn-primary  btn-block btn-blue1" id="submit_custom_btn">Submit</button>
+                            </div>
+                          </div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </section>
+  
+  <div class="clearfix"></div>
+  <footer>
+   <div class="story"></div>
+    <div class="mastfoot">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-5 col-sm-12 text-left"> <a href="index.html" class=""> <img src="img/logo-sec-2.png"></a> <br>
+          &copy; 2015   AMP Technologies, All Rights Reserved</div>
+          <div class="col-md-7 col-sm-12">
+        <div class="app-icon"><a href="https://itunes.apple.com/us/app/amp-pipeline/id1000881469?mt=8" target="_blank"><img src="img/Footer Icon.png" alt=""/></a></div>
+          <div class="pull-right footer-menu">
+              <ul>
+                <li><a href="http://www.facebook.com/AMPTechnologies" target="_blank"><i class="fa fa-facebook fa-lg"></i></a> </li>
+                <li><a href="https://twitter.com/amptechnologies" target="_blank"><i class="fa fa-twitter fa-lg"></i></a> </li>
+                <li><a href="http://www.linkedin.com/company/amp-technologies/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a> </li>
+              </ul>
+              <ul class="text-caps">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products-overview.html">Products</a> </li>
+                <li><a href="services-overview.html">Service</a> </li>
+                <li><a href="champians.html">Team</a> </li>
+              </ul>
+              <ul>
+                <li><a href="contact.html">Contact us</a> </li>
+                <li><a href="privacy.html">Privacy</a> </li>
+                <li><a href="terms.html">Terms</a> </li>
+                <li><a href="#">Careers</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+</div>
+<a href="#" class="scroll-top"  id="scrolltoppage"><i class="fa fa-angle-up"></i> </a> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/toucheffects-min.js"></script> 
+<script src="js/jquery-2.0.2.min.js"></script> 
+ 
+<script src="js/flickity.pkgd.min.js"></script> 
+
+<script src="js/jquery.flexslider.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/retina.js"></script> 
+<script src="js/waypoints.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.validate.js"></script>
+<script src="js/scripts-min.js"></script>
+<script src="js/googleanalytics.js"></script><script src="js/actonservice.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#submit_custom_btn").click(function() { 
+       
+	  console.log("ENTER ss" );
+		//SubmitDemoReq();	
+      
+    });
+	//$("#submit_simple_btn").click(function() { 
+			
+        
+   //});
+	
+	
+});
+function SubmitDemoReq()
+    {
+	
+		if( $('#submit_simple_btn').hasClass('disabled') ) { 
+            
+        }
+		else{
+		console.log("ENTER");
+		//get input field values data to be sent to server
+		var subjectText = "AMP WEB SIMPLE DEMO REQUEST";
+		var customText = "";
+		var customMessage = "";
+		var about = "";
+		var industry = "";
+		var products = "";
+		var services = "";
+		if ($('input[name=inputcomp]').val() != null) {           
+		   customMessage += "Company Name : "+ $('input[name=inputcomp]').val() +";\r\n";
+		}
+		if ($('input[name=demoAbout]:checked').val() != null) {           
+		   about = $('input[name=demoAbout]:checked').attr('id');
+		   if(about == ("aboutOther") && ($("#input-about-other").val() !="")){
+			  about += " - "+$("#input-about-other").val() }
+		   console.log("about "+ about)
+		}
+		$('input.indusCheck:checkbox:checked').each(function () {
+    		industry += $(this).attr('id') + "; ";
+			if(($(this).attr('id') == "techOthers") && ($("#input-indus-other").val() !="")){
+			  industry += " - "+$("#input-indus-other").val() }
+			  console.log("industry "+ industry)
+		});
+		$('input.prodCheck:checkbox:checked').each(function () {
+    		products += $(this).attr('id') + "; ";
+			  console.log("industry "+ products)
+		});
+		$('input.servCheck:radio:checked').each(function () {
+    		services += $(this).attr('id') + "; ";
+			  console.log("industry "+ products)
+		});
+		if ( about !=""){
+			customText += "\r\nAbout :"+ about +"\r\n";
+		}
+		if ( industry !=""){
+			customText += "\r\nIndustry :"+ industry +"\r\n";
+		}
+		if ( products !=""){
+			customText += "\r\nProducts :"+ products +"\r\n";
+		}
+		if ( services !=""){
+			customText += "\r\nServices :"+ services +"\r\n";
+		}
+		if ( customText !=""){
+			customMessage += "\r\n "+ customText;
+			var subjectText = "AMP WEB CUSTOM DEMO REQUEST";
+		}
+		
+		
+            post_data = {
+				'user_name'		: $('input[name=inputName]').val(), 
+				'user_email'	: $('input[name=inputEmail]').val(), 
+				'phone_number'	: $('input[name=inputphone]').val(), 
+				'subject'		: subjectText, 
+				'msg'			: customMessage
+			};
+            
+            //Ajax post data to server
+            $.post('demo_simple.php', post_data, function(response){  
+				if(response.type == 'error'){ //load json data from server and output message     
+					output = '<div class="error">'+response.text+'</div>';
+				}else{
+				    output = '<div class="success">'+response.text+'</div>';
+					//reset values in all input fields
+					$(location).attr('href',"contact-submit.html");    
+				}
+				//$("#contact_form #contact_results").hide().html(output).slideDown();
+            }, 'json');
+			
+			}
+    }
+</script>
+</body>
+</html>

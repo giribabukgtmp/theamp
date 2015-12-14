@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="fsvs" lang="en">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/amp-fevicon.ico" />	
+
+		<title>AMP Technologies Copenhangen Release</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Amp Technologies" />
+		<!-- Bootstrap -->
+		<script src="js/modernizr.custom.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/fsvs-style.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="js/jquery-2.0.2.min.js"></script> 
+		<script src="js/bootstrap.min.js"></script> 
+		<script src="https://jamesflorentino.github.io/nanoScrollerJS/javascripts/jquery.nanoscroller.js"></script> 
+		
+        <script src="js/fsvs.js"></script>
+		
+        <script>
+        jQuery(document).ready(function($){
+			
+			var slopeContainerHeight = ($('#sid0').height() - $('.slopeSlogam').height()-100) +'px';
+			var slopeLogoMargin = ($(window).height() /2 - $('.slopeLogo').height()/2 )  +'px';
+			//console.log("slopeContainerHeight" + slopeContainerHeight);
+			$('.slopeContainer').css('height',slopeContainerHeight);
+			$('.slopeLogo').css('margin-top',slopeLogoMargin);
+			$('.slide').each(function() {
+				$(this).children(".slideContent").css('padding-top', $(window).height());
+				$(this).children(".slideContent").find(".slideContentCell").css('height', $(window).height());
+			});
+			
+			$(window).scroll(function(){
+			
+			var aTop = $('.slopeContainer').height() - $('.slopeSlogam').height()- $('.slopeLogo').height() -100;
+				
+				if($(this).scrollTop()<=aTop ){
+					var newslopeLogoMargin = ($(window).height() /2 - $('.slopeLogo').height()/2 )   + $(this).scrollTop();
+					$('.slopeLogo').css('margin-top',newslopeLogoMargin);
+				}
+				
+			  $('.slideContent').each(function() {
+				var distance = $(this).offset().top ;
+				if ($(window).scrollTop() >= distance) {
+				  $(this).addClass('active-slide');
+				} else {
+				  $(this).removeClass('active-slide');
+				}
+			  });
+			  
+			  $('.slideContentCell').each(function() {
+				var sddistance = $(this).offset().top ;
+				if ($(window).scrollTop() >= sddistance) {
+				
+				} 
+			  });
+			});
+			
+			
+			
+            
+		
+        });
+		
+		
+        </script>
+    </head>
+    <body style="">
+	<div class="scrollable"   >
+					<div class="scrollables text-center" style="width:100% " id="sid0">
+						<a class="ampLogo" href="index.html" ><img src="img/amp-white-logo.png" alt="" style="width:18%;margin:5% 0 0 0" ></a>
+						<p class="slopeContainer"><span  class="slopeLogo"><img src="img/copenhangen-1-logo.png" alt="" style="width:60%; "></span></p>
+						<p class="slopeSlogam"><img src="img/copenhangen-1-slogan.png" alt=""  style="width:70%;margin: 0 "> <br>
+						<br><br><br><img src="img/scroll.png" alt=""  > </p>
+					</div>
+				</div>
+        <div id="fsvs-body">
+		
+            <div class="slide anm anim1" id="sid1">
+				<div class="slideContent">
+					<div class="slideContentCell"><img src="img/copenhangen-1-banner.png" alt=""  style="width:70%;margin: 0 ">
+					</div>
+				</div>
+			</div>
+            
+			<div class="slide anm anim2"  id="sid4">
+				<div class="slideContent">
+					<div class="tb1"><div class="slideContentCell">
+					<img src="img/copenhangen-abrand.png" alt=""  style="width:70%;margin: 0 ">
+					</div></div><div class="tb1">
+					<div class="slideContentCell">
+					<img src="img/copenhangen-segment.png" alt=""  style="width:70%;margin: 0 ">
+					</div></div><div class="tb1">
+					<div class="slideContentCell">
+					<img src="img/copenhangen-manage.png" alt=""  style="width:70%;margin: 0 ">
+					</div></div>
+				</div>
+			</div>
+            <div class="slide anm anim3"  id="sid5">
+				<div class="slideContent">
+					<div class="slideContentCell">
+					<img src="img/copenhangen-visualise.png" alt=""  style="width:70%;margin: 0 ">
+					</div>
+				</div>
+			</div>
+            <div class="slide anm anim7"  id="sid7">
+				<div class="slideContent">
+					<div class="tb1">
+						<div class="slideContentCell" style=''>
+						<img src="img/copenhangen-joinamp.png" alt=""  style="width:50%;margin: 0 ">
+						</div>
+					</div>
+					<div class="tb1">
+						<div class="slideContentCell" style=''>
+						<a href="demo-request.html" class="copenhangenBtn"><img src="img/copenhangen-demo-amp.png" alt="" > </a> 
+						<a href="CopenhagenRelease.html" class="copenhangenBtn"><img src="img/copenhangen-demo-this.png" alt="" > </a>
+						</div>
+					</div>
+					<div class="tb1">
+						<div class="slideContentCell" style=''>
+						<img src="img/copenhangen-1-logo.png" alt="" style="width:60%; ">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+        </div><div style="clear:both"></div>
+		<footer >
+    <div class="mastfoot padtop50">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-5 col-sm-12 text-left"> <a href="index.html" class=""> <img src="img/logo-sec-2.png"></a> <br>
+          &copy; 2015   AMP Technologies, All Rights Reserved</div>
+          <div class="col-xs-6">
+            <div class="pull-right footer-menu fm-2x">
+               <ul>
+                <li><a href="http://www.facebook.com/AMPTechnologies" target="_blank"><i class="fa fa-facebook fa-lg"></i></a> </li>
+                <li><a href="https://twitter.com/amptechnologies" target="_blank"><i class="fa fa-twitter fa-lg"></i></a> </li>
+                <li><a href="http://www.linkedin.com/company/amp-technologies/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a> </li>
+              </ul>
+              <ul class="text-caps">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="products-overview.html">Products</a> </li>
+                <li><a href="services-overview.html">Service</a> </li>
+                <li><a href="champians.html">Team</a> </li>
+              </ul>
+              <ul>
+                <li><a href="contact.html">Contact us</a> </li>
+                <li><a href="privacy.html">Privacy</a> </li>
+                <li><a href="terms.html">Terms</a> </li>
+                <li><a href="#">Careers</a> </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+    </body>
+</html>

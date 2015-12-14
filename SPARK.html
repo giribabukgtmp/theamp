@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 fsvs"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 fsvs"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 fsvs"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js fsvs"> <!--<![endif]-->
+<html class="fsvs" lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/amp-fevicon.ico" />
+<title>AMP Technologies  </title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="Amp Technologies" />
+<!-- Bootstrap -->
+<script src="js/modernizr.custom.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/flickity.css" rel="stylesheet" >
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/flexslider.css" rel="stylesheet">
+<link href="css/jquery.simplyscroll.css" rel="stylesheet">
+<link href="css/coda-slider.css" rel="stylesheet">
+<link href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+<link href="css/styles.css" rel="stylesheet">
+<style>
+
+html.fsvs {font-size: 26px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+  html.fsvs #fsvs-body {font-size: 18px;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%; }
+    html.fsvs #fsvs-body > .slide {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-perspective: 1000; }
+  html.fsvs #fsvs-pagination {
+    margin: 0;
+    padding: 8px 4px;
+    position: fixed;
+    height: auto;
+    right: -100px;
+    top: 50%;
+    z-index: 999;
+    width: 32px; }
+    html.fsvs #fsvs-pagination li {
+      list-style: none;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      margin: 0 0 2px 0;
+      cursor: pointer; }
+      html.fsvs #fsvs-pagination li > span {
+        border-radius: 100%;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        border: 1px solid white;
+        display: block; }
+        html.fsvs #fsvs-pagination li > span > span {
+          border-radius: 100%;
+          width: 12px;
+          height: 12px;
+          line-height: 12px;
+          border: 1px solid white;
+          display: block;
+          margin: 4px; }
+      html.fsvs #fsvs-pagination li.active > span {
+        border: 1px dashed white; }
+        html.fsvs #fsvs-pagination li.active > span > span {
+          background: white; }
+      html.fsvs #fsvs-pagination li:last-child {
+        margin: 0; }
+.s1 { 
+    background: transparent url(img/pipeline/bgr201.jpg) no-repeat center center;  background-size: cover ; 
+}
+.s2 { 
+    background: transparent url(img/pipeline/bgr202.jpg) no-repeat center center ;  background-size: cover ; 
+}		
+.s3 { 
+    background: transparent url(img/pipeline/bgr201.jpg) no-repeat center center;  background-size: cover ; 
+}	
+.s4 { 
+    background: transparent url(img/pipeline/bgr203.jpg) no-repeat center center;  background-size: cover ; 
+}
+.s5 { 
+    background: transparent url(img/pipeline/bgr205.jpg) no-repeat center center;  background-size: cover ; 
+}
+.s6 { 
+    background: transparent url(img/pipeline/bgr204.jpg) no-repeat center center;  background-size: cover ; 
+}
+.s7 { 
+    background: transparent url(img/pipeline/bgr205.jpg) no-repeat center center;  background-size: cover ; 
+}
+.s8 { 
+    background: transparent url(img/pipeline/bgr207.jpg) no-repeat center center;  background-size: cover ; 
+}
+.s9 { 
+    background: transparent url(img/pipeline/bgr208.jpg) no-repeat center center;  background-size: cover ;    
+}
+.s10 { 
+    background: transparent url(img/pipeline/bgr209.jpg) no-repeat center center;  background-size: cover ;   
+}
+.s11 { 
+    background: transparent url(img/pipeline/bgr210.jpg) no-repeat center center;  background-size: cover ;    
+}
+.pad100{ padding:100px;height:100%; display:table; width:100%}
+.slide .pull-tc-left{background-color:transparent;height:100%; display:table-cell;width:35%;}
+.slide .pull-tc-center{ display:table-cell; width:29%}
+.slide .pull-tc-right{background-color:transparent;height:100%; display:table-cell;width:35%;}
+.slide .container-fluid{ height:100%}
+.text-top { vertical-align:top}
+.text-middle { vertical-align:middle}
+.text-bottom { vertical-align:bottom}
+.list-pipe-1{line-height: 18px;
+    font-size: 14px;
+    margin-left: -45px;
+    padding: 3px 30px 30px 109px;
+    /* border-bottom: #dedede solid 1px; */
+    background: transparent url(img/pipeline/pipelist.png) no-repeat top left;
+} 
+.slide .pull-tc-left .list-pipe-1{    line-height: 18px;
+    font-size: 14px;
+    margin-right: -70px;
+    padding: 0px 116px 30px 90px;
+    /* border-bottom: #dedede solid 1px; */
+    background: transparent url(img/pipeline/pipelistrite.png) no-repeat right top;
+} 
+.pad50 {
+    padding: 68px 0;
+}
+@media all and (min-width: 1600px) {
+footer .story {
+    min-height: 215px;
+ }  
+ html.fsvs #fsvs-body {font-size: 26px;  } 
+ .list-pipe-1{ font-size:18px; 
+    margin-left: -81px;
+    padding: 3px 30px 116px 109px;
+   
+} 
+.slide .pull-tc-left .list-pipe-1{    line-height: 18px;
+  font-size:18px; 
+    padding: 0px 116px 116px 90px;
+   
+} 
+}
+.staymob{
+    position: absolute;
+    z-index: 400;
+    top: 0;
+    left: 0;
+	width:100%;
+	height:100%;
+   -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	 background: transparent url(img/pipeline/bgr1.png) no-repeat center center;
+	  background-size: cover ;    ; 
+}
+.staymob.pushup{  top: -100%;}
+#appstorelink {
+    position: absolute;
+    z-index: 5000;
+    bottom: 0;
+    left: 26%;
+    padding-bottom: 78px;-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+#appstorelink .imgs {width:100%; -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;}
+#appstorelink.big .imgs {
+    width: 100%;
+    display: block;
+}
+#appstorelink.sml .imgs {
+    width: 65%;
+    display: block;
+}
+#appstorelink.noshow .imgs {
+   width: 65%;
+    display: none;
+}
+#appstorelink .imgs img {width:100%; max-width:300px;}
+
+h2 span {
+    font-size: 32px;
+    border-bottom: 3px solid #25ADA2;
+   
+}h2  {
+    
+    margin-bottom: 48px;
+}
+		</style>
+        <script src="js/jquery-2.0.2.min.js"></script> 
+        <script src="js/fsvs.js"></script>
+        <script>
+        jQuery(document).ready(function($){
+            var slider = $.fn.fsvs({
+                autoPlay            : false,
+                speed               : 1000,
+                bodyID              : 'fsvs-body',
+                selector            : '> .slide',
+                mouseSwipeDisance   : 40,
+                afterSlide          : function(){},
+                beforeSlide         : function(){ console.log("sdsd");myAppIconChange()},
+                endSlide            : function(){},
+                mouseWheelEvents    : true,
+                mouseWheelDelay     : false,
+                mouseDragEvents     : true,
+                touchEvents         : true,
+                arrowKeyEvents      : true,
+                pagination          : false,
+                nthClasses          : 2,
+                detectHash          : false
+            
+			});
+			function myAppIconChange(){
+				  if ($(".active-slide").hasClass("bigapp")) {
+								$('#appstorelink').removeClass("sml");
+								 $('#appstorelink').removeClass("noshow");
+								$('#appstorelink').addClass("big");
+							}
+							else if ($(".active-slide").hasClass("smlapp")) {
+							$('#appstorelink').removeClass("big");
+								 $('#appstorelink').removeClass("noshow");
+							 $('#appstorelink').addClass("sml");
+							}
+							else  {
+							$('#appstorelink').removeClass("big");
+								 $('#appstorelink').removeClass("sml");
+							 $('#appstorelink').addClass("noshow");
+							 
+							}
+								if ($(".active-slide").hasClass("showmob")) {
+								$('.staymob').removeClass("pushup");
+								 
+							}
+							else  {
+							$('.staymob').addClass("pushup");
+							}
+				}
+					
+							
+				
+			
+        });
+        </script>
+    </head>
+    <body>
+	
+        <div id="fsvs-body">
+            <div class="slide  s1 bigapp showmob"> 
+			
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right">
+				<a href="index.html" class=" text-left pull-left"><img src="img/amp-logo-black.png" alt="AMP Logo"></a><br>
+				<br><br/><br/>CONVERT LEADS TO REVENUE<br/>FASTER AND EASIER
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right text-bottom ">
+				WITH SPARK THE BEST REAL TIME<br> 
+LEASING CRM FOR COMMERCIAL REAL ESTATE<br>
+<a href="demo-request.html">Try it free today</a><br><br><br><br>
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			<div class="slide  s2 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100 text-white">
+				<div class="pull-tc-left text-right"><br><br><br><br>
+				ACCESS YOUR PIPELINE ANYWHERE
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right text-bottom">
+				SPARK ALLOWS BROKERS TO WORK<br>
+				ANYWHERE WITHOUT THE HASSLE <br>OF BEING TIED TO AN OFFICE, OR<br> THE INCONVENIENCE OF CARRYING MULTIPLE MATERIALS
+				</div>
+				</div>
+			</div>
+			</div>
+            <div class="slide  s3 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right text-middle">
+				SPARK TAKES YOUR LEASING <br>
+OPERATIONS TO THE NEXT <br>LEVEL BY CONNECTING YOU <br>
+TO THE DATA YOU NEED TO <br>CLOSE DEALS QUICKLY 
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right">
+				<h2><span>THE SPARK DASHBOARD</span></h2>
+				<p class="list-pipe-1">
+Track the deals you’ve won or lost, and the deals<br> you are negotiating in real time at any time.</p>
+<p class="list-pipe-1">
+Know which prospects are at which stage in the pipeline without having to dig for the information.
+</p>
+<p class="list-pipe-1">
+Plan for the future with real time occupancy data that reflects your current assets.</p>
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="slide  s4 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right">
+				
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right">
+				
+
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="slide  s5 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right">
+				
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right text-middle ">
+			WITH SPARK YOU WILL <br>
+NEVER LOSE TOUCH WITH <br>
+POTENTIAL TENANTS
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="slide  s6 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right">
+				
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right text-middle text-white">
+					EASILY MAINTAIN A STEADY <br>
+PIPELINE THAT ALWAYS RESULTS<br> IN QUICK DEALS AND NEW <br>
+TENANTS
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			<div class="slide  s7 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right">
+				<h2><span>YOUR PIPELINE</span></h2>
+				<p class="list-pipe-1">Swipe through each stage of the Pipeline for a <br>snapshot of how many prospects you have.</p>
+<p class="list-pipe-1">	Simply swipe to see important info for each<br>
+prospect including contact information, suites, and notes. All synced automatically.</p>
+				
+				
+			
+ 
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div style="width:35%;" class="pull-tc-right text-middle">
+					AND KEEP YOUR DATA UP-TO-DATE <br>AND YOUR EMPLOYEES INFORMED
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			<div class="slide  s8 smlapp showmob">
+		
+			
+			</div>
+			<div class="slide  s9 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right text-white text-middle">
+				EASILY UPDATE CONTACTS <br>
+WHILE ON THE MOVE <br>
+WITHOUT DISRUPTING YOUR BUSY SCHEDULE<br>
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div style="width:35%;" class="pull-tc-right text-right">
+				
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			<div class="slide  s10 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right  text-middle">
+				QUICKLY CREATE NOTES FOR <br>
+TENANTS WHILE ON THE MOVE, <br>
+AND SHARE AUTOMATICALLY<br> WITH YOUR TEAM
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right">
+					
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			<div class="slide  s11 smlapp showmob">
+			<div class="container-fluid">
+				<div class="row pad100">
+				<div class="pull-tc-left text-right text-white ">
+				AUTOMATICALLY SYNC ALL OF YOUR ACTIONS IN REAL TIME
+				</div>
+				<div  class="pull-tc-center"></div>
+				<div class="pull-tc-right text-bottom text-white">
+					AND INCREASE THE POTENTIAL OF YOUR PIPELINE BY CLOSING DEALS FAST<br><br><br><br>
+				</div>
+				</div>
+			</div>
+			
+			</div>
+			
+            <div class="slide s12">
+                <div class="scrollable" style="width:100%;height:100%;overflow:auto; ">
+				
+				<div class="container-fluid">
+				<div class="row pad100">
+				<div style="width:35%;" class="pull-tc-left">
+				
+				</div>
+				<div  class="pull-tc-center text-center">  <img src="img/pipeline/piplinelogo.jpg" style="width:100%;max-width:360px;"/></div>
+				<div class="pull-tc-right">
+					AVAILABLE FREE <br>
+IN THE APP STORE
+				</div>
+				</div>
+				
+			</div>
+                     </div>
+            </div>
+			
+			
+			<div class="slide  " style="    background-color: #D1D2D4;">
+			<footer> 
+  <div class="story" style="background:#ffffff url(http://localhost:9080/server/amp_website/img/grey-build-footer-trans.png) 50% 100% no-repeat;"> </div>
+  <div class="mastfoot">
+    <div class="col-md-6 col-md-offset-3 text-center pad50"> <a href="#"> <img src="img/logo-footer-center.png"></a>
+      <h2 class="text-caps ">THE REVOLUTION IN COMMERCIAL REAL ESTATE</h2>
+      <p><a class="big-foot-btn" href="demo-request.html"> Try A free Demo Today </a></p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-xs-6 text-left" style="    font-size: 12px;"> <a href="index.html" class=""> <img src="img/logo-sec-2.png"></a> <br>
+          © 2015   AMP Technologies, All Rights Reserved</div>
+        <div class="col-sm-6">
+          <div class="pull-right footer-menu">
+            <ul>
+              <li><a href="http://www.facebook.com/AMPTechnologies" target="_blank"><i class="fa fa-facebook fa-lg"></i></a> </li>
+              <li><a href="https://twitter.com/amptechnologies" target="_blank"><i class="fa fa-twitter fa-lg"></i></a> </li>
+              <li><a href="http://www.linkedin.com/company/amp-technologies/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a> </li>
+            </ul>
+            <ul class="text-caps">
+              <li><a href="index.html">Home</a> </li>
+              <li><a href="products-overview.html">Products</a> </li>
+              <li><a href="services-overview.html">Service</a> </li>
+              <li><a href="champians.html">Team</a> </li>
+            </ul>
+            <ul>
+              <li><a href="contact.html">Contact us</a> </li>
+              <li><a href="privacy.html">Privacy</a> </li>
+              <li><a href="terms.html">Terms</a> </li>
+              <li><a href="#">Careers</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="clearfix"></div>
+</footer>
+			
+			</div>
+            
+        </div>
+		<div class="staymob fheight">
+		
+		</div>
+		<div id="appstorelink"> <span class="imgs"><a href="https://itunes.apple.com/" ><img src="img/pipeline/appstore.png" style="width:100%;max-width:360px;"/> </a></span></div>
+		
+    </body>
+</html>
